@@ -1,0 +1,100 @@
+body {
+    display: grid;
+}
+
+.container {
+    text-align: left;
+    max-width: 500px;
+    max-height: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    transition: transform 1s linear;
+    transform-style: preserve-3D;
+}
+
+.element {
+    background-color: #0074d9;
+    height: 100px;
+    width: 100px;
+    font-size: 1px;
+    padding: 1px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.container:hover .element {
+    -webkit-animation: roll 3s infinite;
+    animation: roll 3s infinite;
+    transform: rotate(0deg);
+}
+
+@-webkit-keyframes roll {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+.element1 {
+
+    background-color: #0074d9;
+    height: 100px;
+    width: 100px;
+    font-size: 1px;
+    padding: 1px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+
+}
+
+.container:hover .element1 {
+    -webkit-animation: roll1 3s infinite;
+    animation: roll1 3s infinite;
+    transform: rotate(0deg);
+}
+
+@-webkit-keyframes roll1 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes roll1 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
