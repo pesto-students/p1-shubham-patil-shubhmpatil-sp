@@ -11,7 +11,7 @@ body {
     grid-template-columns: 100px 100px;
     grid-row-gap: 0px;
     grid-column-gap: 0px;
-    transition: transform 1s linear;
+
     transform-style: preserve-3D;
 }
 
@@ -24,30 +24,31 @@ body {
     color: white;
     margin-right: 5px;
     margin-left: 5px;
+    animation: roll12 1s reverse;
 }
 
 .container:hover .element {
-    -webkit-animation: roll 3s infinite;
-    animation: roll 3s infinite;
+    -webkit-animation: roll 1s forwards;
+
     transform: rotate(0deg);
 }
 
 @-webkit-keyframes roll {
-    0% {
+    from {
         transform: rotate(0);
     }
 
-    100% {
+    to {
         transform: rotate(90deg);
     }
 }
 
-@keyframes roll {
-    0% {
+@-webkit-keyframes roll12 {
+    from {
         transform: rotate(0);
     }
 
-    100% {
+    to {
         transform: rotate(90deg);
     }
 }
@@ -62,39 +63,37 @@ body {
     color: white;
     margin-right: 5px;
     margin-left: 5px;
-
+    -webkit-animation: roll22 1s reverse;
 }
 
+
 .container:hover .element1 {
-    -webkit-animation: roll1 3s infinite;
-    animation: roll1 3s infinite;
-    transform: rotate(0deg);
+    -webkit-animation: roll1 1s forwards;
 }
 
 @-webkit-keyframes roll1 {
-    0% {
+    from {
         transform: rotate(0);
     }
 
-    100% {
+    to {
         transform: rotate(-90deg);
     }
 }
 
-@keyframes roll1 {
-    0% {
+@-webkit-keyframes roll22 {
+    from {
         transform: rotate(0);
     }
 
-    100% {
+    to {
         transform: rotate(-90deg);
     }
 }
 
 .centered {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
-
     z-index: -1;
 }
