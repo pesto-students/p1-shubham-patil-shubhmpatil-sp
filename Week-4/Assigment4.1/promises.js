@@ -63,7 +63,7 @@ const testPromiseResolve = new MyPromise((res, rej) => {
     let Divisor = 2
     setTimeout(() => {
         if (Divisor === 5) {
-            rej('number can not be divisibel by 5')
+            rej('number can not be divisible by 5')
 
         } else {
             res(randomNumber / Divisor)

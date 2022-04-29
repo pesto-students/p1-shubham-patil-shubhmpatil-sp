@@ -26,7 +26,6 @@ const fib = (n) => ({
     }
 })
 
-
 for (const number of fib(3)) {
     console.log(number)
 }

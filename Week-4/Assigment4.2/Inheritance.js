@@ -28,4 +28,4 @@ var him = new Teacher();
 // console.log(him)
 
 him.initialize("Adam", 45);
-him.teach("Inheritance");
+him.teach("Inheritance");""
