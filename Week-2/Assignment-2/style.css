@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height:200px;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 200px;
+    position: absolute;
+}
+.box{
+    width:100px;
+    height:100px;
+}
+.div--transform-red{
+    background-color: red;
+    transition: all 1s ease-in-out;
+    transform-origin: 0 0;
+}
+.div--transform-blue{
+    background-color: blue;
+    transition: all 1s ease-in-out;
+    transform-origin: 0 100%;
+}
+.div--transform-green{
+    background-color: green;
+    transition: all 1s ease-in-out;
+    transform-origin: 100% 100%;
+}
+.div--transform-yellow{
+    background-color: yellow;
+    transition: all 1s ease-in-out;
+    transform-origin: 100% 0;
+}
+section:hover .div--transform-red{
+    transform: rotate(90deg);
+}
+section:hover .div--transform-yellow{
+    transform: rotate(-90deg);
+}
+section:hover .div--transform-blue{
+    transform: rotate(-90deg);
+}
+section:hover .div--transform-green{
+    transform: rotate(90deg);
+}
