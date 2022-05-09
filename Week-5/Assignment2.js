@@ -22,6 +22,7 @@ const vowelCount = function (string){
 
 console.log( vowelCount("India"))
 
+
 /*
 OUTPUT :
 

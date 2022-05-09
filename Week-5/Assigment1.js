@@ -39,5 +39,4 @@ resolve : [
 { value: undefined, done: true }
 ]
 finally
-
 */
